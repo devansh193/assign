@@ -1,6 +1,6 @@
 import {db} from "@/lib/db";
 import { InputType } from "./input";
-import { CreateModule } from "./schema";
+
 
 const handler = async (data: InputType)=>{
     const {title} = data;

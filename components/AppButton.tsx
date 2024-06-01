@@ -4,8 +4,8 @@ import {
   ChevronDown,
   Link as LinkIcon,
   Plus,
+  Rows3,
   ArrowUpFromLine,
-  History as HistoryIcon,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -45,7 +45,7 @@ const AppButton: React.FC = () => {
 
   const menuItemLinks: MenuItemLink[] = [
     {
-      icon: <HistoryIcon className="mr-2 h-4 w-4" />,
+      icon: <Rows3 className="mr-2 h-4 w-4" />,
       label: "Course Module",
       dialogProps: {
         header: "Create a Module",

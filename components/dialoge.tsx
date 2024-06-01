@@ -97,10 +97,11 @@ const CustomDialog: React.FC<DialogProps> = ({
               </Label>
               <div className="mt-2">
                 <Input
+                  type="link"
                   id="name"
                   className="col-span-3"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  value={displayNameValue}
+                  onChange={(e) => setDisplayNameValue(e.target.value)}
                 />
               </div>
             </div>
@@ -112,16 +113,18 @@ const CustomDialog: React.FC<DialogProps> = ({
                 <Input
                   id="displayName"
                   className="col-span-3"
-                  value={displayNameValue}
-                  onChange={(e) => setDisplayNameValue(e.target.value)}
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
             </div>
           </div>
           <DialogFooter>
+            <DialogClose>
             <Button type="button" variant={"outline"}>
               Cancel
             </Button>
+            </DialogClose>
             <Button
               type="submit"
               className={cn("bg-teal-600 hover:bg-teal-700")}

@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       {data.map((course)=>{
         return(
-          <CourseCard key={course.name} Title={course.name}   />
+          <CourseCard key={course.name} Title={course.name} />
         )
       })}
     </div>
